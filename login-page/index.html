@@ -1,0 +1,73 @@
+<!DOCTYPE html>       <!-- login.html -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Login</title>
+    <script>
+    // function checkPassword() {
+    //     var password = document.getElementById("password").value;
+    //     if (password === "2486") {
+    //          window.location.href = "protected.html";  // protected.html ⚠️⚠️⚠️❗❗❗
+    //     } else {
+    //         alert("Incorrect password. Access denied.");
+    //     }
+    //     return false;
+    // }
+    function checkCredentials() {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+
+    var correctUsername = "Talaat";  // اسم المستخدم الصحيح
+    var correctPassword = "2486";  // كلمة المرور الصحيحة
+
+    if (username === correctUsername && password === correctPassword) {
+        window.location.href = "../password-page/pass.html";  // protected.html ⚠️⚠️⚠️❗❗❗
+    } else {
+        alert("Incorrect username or password. Access denied.");
+    }
+    return false;
+}
+    </script>
+</head>
+<body>
+    <header>
+        <div class="content-header">
+            <h1>
+                Warning ! <br> this site is so private
+            </h1>
+        </div>
+    </header>
+    <div class="container-home">
+        <div class="container-form">
+
+            <form onsubmit="return checkCredentials()">
+                <div class="username">
+                     <label for="username" class="name">Name</label>
+                     <input type="username" id="username" name="username" class="input-name-password">
+                </div>
+                <br>
+                <div class="password">
+                    <label for="password" class="passwordo">Key</label>
+                    <input type="password" id="password" name="password" class="input-name-password">
+                </div>
+                <input type="submit" value="Submit" class="input-supmit">  <!-- زر "Submit" مخفي -->
+                
+                <!-- <button type="submit">Submit</button> -->
+            </form>
+
+        </div>
+    </div>
+    <footer>
+        <div class="content-header">
+            <h3>
+               Dev Talaat Gamal
+            </h3>
+        </div>
+    </footer>
+</body>
+</html>

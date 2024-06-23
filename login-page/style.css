@@ -1,0 +1,120 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    /* overflow: hidden; */
+}
+body{
+    background-color: rgb(38, 38, 38);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-home{
+    background-color: rgb(14, 14, 14);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    background-color: #00ddff0c;
+    padding: 20px;
+    border-radius: 15px;
+    width: max-content;
+    height: max-content;
+    color: #ffffff;
+    box-shadow: #00ddff57 0px 0px 100px 150px;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: left;
+    text-align: left;
+}
+.container-form{
+    background-color: rgba(0, 0, 255, 0);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }/*
+label{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-left:  #00adc8 solid 3px;
+    margin: 20px;
+    margin-left: 2px;
+    margin-right: 10px;
+} */
+.name{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-left:  #00adc8 solid 3px;
+    margin: 20px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.passwordo{
+    background-color: rgb(0, 0, 0);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 17.5px;
+    padding-right: 17.5px;
+    border-left:  #00adc8 solid 3px;
+    margin: 20px;
+    margin-left: 2px;
+    margin-right: 10px;
+}
+.input-name-password{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-left:  #00a2bb solid 3px;
+    border-top: #ffffff00 solid 2px;
+    border-bottom: #ffffff00 solid 2px;
+    border-right: #ffffff00 solid 2px;
+    margin-right: 10px;
+    height: 30px;
+    color: #ffffff;
+}
+.input-supmit{
+    background-color: rgb(0, 0, 0);
+    padding: 10px;
+    border-left:  #00a2bb solid 3px;
+    border-top: #ffffff00 solid 2px;
+    border-bottom: #ffffff00 solid 2px;
+    border-right: #ffffff00 solid 2px;
+    margin-right: 10px;
+    height: max-content;
+    color: #ffffff;
+    margin-top: 20px;
+    display: none;     /* اخفاء الزر */
+}
+header{
+    background-color: #00adc800;
+    display: block;
+    position: fixed;
+    top: 200px;
+    text-align: center;
+    color: #ffffff;
+}
+
+footer{
+    background-color: #00adc800;
+    display: block;
+    position: fixed;
+    bottom: 0px;
+    text-align: center;
+    color: #ffffff2b;
+    padding: 20px;
+}
+footer h3{
+    border-bottom: #00a2bb7a solid 3px;
+    padding-left: 10px;
+    padding: 10px;
+}
