@@ -27,12 +27,40 @@ form{
     padding: 20px;
     border-radius: 15px;
     width: max-content;
-    height: 80px;
+    height: max-content;
     color: #ffffff;
     box-shadow: #00ddff57 0px 0px 100px 150px;
-    display: flex;
+    display: block;
     align-items: center;
     justify-content: center;
+    text-align: center;
+}
+form h6{
+    display: inline-block;
+    position: relative;
+    right: -10px;
+    top: 45px;
+    color: #ffffff07;
+}
+
+form h5{
+    display: inline-block;
+    position: relative;
+    right: 30px;
+    top: 45px;
+    color: #ffffff;
+}
+
+form h4{
+    display: inline-block;
+    position: relative;
+    right: -10px;
+    top: 45px;
+    color: #ffffff;
+}
+form h2{
+    display: inline-block;
+    margin-bottom: 20px;
 }
 .container-form{
     background-color: rgba(0, 0, 255, 0);
