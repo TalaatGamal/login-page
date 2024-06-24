@@ -97,6 +97,7 @@ header{
     top: 10vh;
     text-align: center;
     color: #ffffff;
+    z-index: 1;
 }
 
 footer{
