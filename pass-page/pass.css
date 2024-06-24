@@ -36,6 +36,7 @@ form{
     text-align: center;
     position: fixed;
     top: 40vh;
+    z-index: 0;
 }
 form h6{
     display: inline-block;
@@ -94,9 +95,9 @@ header{
     background-color: #00adc800;
     display: flex;
     position: fixed;
-    top: 10vh;
+    top: 15vh;
     text-align: center;
-    color: #ffffff;
+    color: #ff0000;
     z-index: 1;
 }
 
