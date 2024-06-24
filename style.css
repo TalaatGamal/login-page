@@ -29,7 +29,7 @@ form{
     border-radius: 15px;
     width: max-content;
     height: max-content;
-    color: #ff0000;
+    color: #ffffff;
     box-shadow: #00ddff57 0px 0px 100px 150px;
     display: flex;
     flex-direction:column;
@@ -95,7 +95,7 @@ header{
     display: flex;
     height: max-content;
     position:fixed ;
-    top: 20vh;
+    top: 15vh;
     text-align: center;
     color: #ffffff;
     z-index: 1;
