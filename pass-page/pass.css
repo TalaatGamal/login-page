@@ -90,9 +90,9 @@ input{
 }
 header{
     background-color: #00adc800;
-    display: block;
+    display: flex;
     position: fixed;
-    top: 200px;
+    top: 20vh;
     text-align: center;
     color: #ffffff;
 }
