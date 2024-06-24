@@ -34,6 +34,8 @@ form{
     align-items: center;
     justify-content: center;
     text-align: center;
+    position: fixed;
+    top: 40vh;
 }
 form h6{
     display: inline-block;
