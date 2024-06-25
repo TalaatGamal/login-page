@@ -30,7 +30,7 @@ form{
     width: max-content;
     height: max-content;
     color: #ffffff;
-    box-shadow: #00ddff57 0px 0px 100px 150px;
+    box-shadow: #00b3ff1c 0px 0px 100px 150px;
     display: flex;
     flex-direction:column;
     align-items:center;
@@ -121,14 +121,14 @@ footer h3{
     height: 0vh;
     min-height: 0vh;
     background-color: rgba(0, 53, 73, 0);
-    animation: rotation 4.7s infinite linear;
+    animation: rotation 5s infinite linear;
     border-radius: 200px;
     border-bottom: #0091ff solid 4px;
     border-top: #00000000 solid 4px;
     border-right: #00a2bb00 solid 4px;
     border-left: #28bb0000 solid 4px;
     position: fixed;
-    top: 70vh;
+    bottom: 30vh;
     left: 100px;
     z-index: 5;
     box-shadow: #ffffff 0px 0px 100px 20px;
@@ -193,4 +193,62 @@ footer h3{
     to {
         transform: rotate(360deg);
     } */
+}
+
+.sircle2{
+    width: 100vw;
+    height: 50vh;
+    background-color: rgba(0, 53, 73, 0.29);
+    animation: sircle2 5s infinite linear;
+    border-radius: 200px;
+    border-bottom: #00a6ff solid 4px;
+    border-top: #00a6ff solid 4px;
+    border-right: #00a2bb00 solid 4px;
+    border-left: #28bb0000 solid 4px;
+    position: fixed;
+    top: -25vh;
+    right: 100px;
+    z-index: 5;
+    box-shadow: #ffffff81 0px 0px 50px 10px;
+}
+@keyframes sircle2{
+    /* 0% {
+        opacity: 0;
+        transform: translateY(-1000%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(2500%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(5000%);
+      } */
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+form h2{
+    animation: signinanimation 5s infinite linear;
+}
+
+@keyframes signinanimation{
+    0% {
+        opacity: 0;
+        transform: translateY(-80%);
+      }
+      50% {
+        opacity: 1;
+        transform: translateY(0%);
+      }
+      100% {
+        opacity: 0;
+        transform: translateY(0%);
+      }
+}
+.header-info{
+    font-size: 20px;
 }
