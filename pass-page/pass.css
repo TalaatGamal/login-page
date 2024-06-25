@@ -38,29 +38,6 @@ form{
     top: 40vh;
     z-index: 0;
 }
-form h6{
-    display: inline-block;
-    position: relative;
-    right: -10px;
-    top: 45px;
-    color: #00bbff0c;
-}
-
-form h5{
-    display: inline-block;
-    position: relative;
-    right: 30px;
-    top: 45px;
-    color: #ffffff;
-}
-
-form h4{
-    display: inline-block;
-    position: relative;
-    right: -10px;
-    top: 45px;
-    color: #ffffff;
-}
 form h2{
     display: inline-block;
     margin-bottom: 20px;
@@ -114,4 +91,15 @@ footer h3{
     border-bottom: #00a2bb7a solid 3px;
     padding-left: 10px;
     padding: 10px;
+}
+.check-ar{
+    color: #ff000052;
+    font-weight: 900;
+}
+.check-en{
+    color: #ff000050;
+}
+.hr{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
